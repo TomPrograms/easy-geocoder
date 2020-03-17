@@ -1,0 +1,33 @@
+{
+  "name": "easy-geocoder",
+  "version": "1.1.1",
+  "description": "A small, up-to-date geocoding API wrapper, allowing for geocoding for free with no API key, featuring caching and API-compliant design.",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write {**,**/**}/*.{js,md,css}"
+  },
+  "repository": "shopolivery/easy-geocoder",
+  "author": "Shopolivery Limited",
+  "license": "MIT",
+  "files": [
+    "LICENSE",
+    "Changelog.md",
+    "Readme.md",
+    "index.js",
+    "src/"
+  ],
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bottleneck": "^2.19.5",
+    "lru-cache": "^5.1.1"
+  },
+  "keywords": [
+    "geocoding",
+    "geocoder",
+    "geocoding-api",
+    "reverse-geocoder"
+  ]
+}
