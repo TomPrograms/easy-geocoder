@@ -103,7 +103,7 @@ Geocode multiple OSM objects:
 Geocoder.lookup({
   osm_ids: "R146656,N240109189"
 }).then(result => {
-  // outputs "Manchester"
+  // outputs "Manchester Berlin"
   console.log(result[0].address.city, result[1].address.city);
 });
 ```
