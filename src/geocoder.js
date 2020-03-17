@@ -104,8 +104,8 @@ class EasyGeocoder {
   createRequest(url, requestData, specificOptions) {
     requestData = {
       ...requestData,
-      ...specificOptions,
-      ...this.requestDefaults
+      ...this.requestDefaults,
+      ...specificOptions
     };
     const requestObj = new Request(requestData);
 
