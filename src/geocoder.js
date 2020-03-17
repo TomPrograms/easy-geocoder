@@ -131,35 +131,26 @@ class EasyGeocoder {
 class EasyGeocoderCallbackWrapper extends EasyGeocoder {
   search(query, options, callback) {
     const returnedPromise = super.search(query, options);
-
-    // allow callback to be second option
-    if (callback === undefined && typeof options === "function") {
-      callback = options;
-    }
-
-    return this.convertToCallback(returnedPromise, callback);
+    return this.handlePromise(options, callback, returnedPromise);
   }
 
   reverse(query, options, callback) {
     const returnedPromise = super.reverse(query, options);
-
-    // allow callback to be second option
-    if (callback === undefined && typeof options === "function") {
-      callback = options;
-    }
-
-    return this.convertToCallback(returnedPromise, callback);
+    return this.handlePromise(options, callback, returnedPromise);
   }
 
   lookup(query, options, callback) {
     const returnedPromise = super.lookup(query, options);
+    return this.handlePromise(options, callback, returnedPromise);
+  }
 
+  handlePromise(options, callback, promise) {
     // allow callback to be second option
     if (callback === undefined && typeof options === "function") {
       callback = options;
     }
 
-    return this.convertToCallback(returnedPromise, callback);
+    return this.convertToCallback(promise, callback);
   }
 
   convertToCallback(promise, callback) {
