@@ -198,9 +198,7 @@ const Geocoder = new EasyGeocoder({
 
 ## Credit
 
-Made with 💖 by <img src="./docs/assets/shopoliveryLogo.png" width="10%">. We at Shopolivery love open source software - we recognise the internet (and by extent Shopolivery) is only possible with the hard work of open source maintainers - so we are committed to contribute by maintaining and creating open source software under permissive licenses.
-
-Lead Maintainer: [Tom](https://github.com/TomPrograms)
+Author: [Tom](https://github.com/TomPrograms)
 
 ## License
 
