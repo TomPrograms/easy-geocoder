@@ -6,8 +6,8 @@
   "scripts": {
     "format": "prettier --write {**,**/**}/*.{js,md,css}"
   },
-  "repository": "shopolivery/easy-geocoder",
-  "author": "Shopolivery Limited",
+  "repository": "tomprograms/easy-geocoder",
+  "author": "Tom",
   "license": "MIT",
   "files": [
     "LICENSE",
