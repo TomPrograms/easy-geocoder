@@ -20,7 +20,7 @@
     "prettier": "^1.19.1"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bottleneck": "^2.19.5",
     "lru-cache": "^5.1.1"
   },
